@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasil luvas</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/sobre.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/formulario.css">
+</head>
+<body>
+    <nav class="navBar">
+        <a href="./index.html" class="logo">Brasil Luvas</a>
+        <div class="navLinks">
+            <ul>
+                <li class="btnNavbar1"><a href="./produtos.html">Produtos</a></li>
+                <li class="btnNavbar2"><a href="./sobre.html">Quem somos</a></li>
+                <li class="btnNavbar3"><a href="./contatos.html">Contatos</a></li>
+            </ul>
+            
+        </div>
+        <img src="../images/menu-icon.png" alt="Botão Menu" class="menuBotao">
+
+    </nav>
+    <main class="sobreBox">
+        <div  class="sobreCardText" data-aos="fade-up" >
+            <p class="sobreTxt">
+                A Brasil Luvas é uma empresa líder no mercado de equipamentos de segurança e ferramentas para construção civil. Atuando há mais de 20 anos, a empresa é especializada na representação de produtos de alta qualidade, com foco na satisfação dos clientes.
+            </p>
+        </div>
+
+        <div  class="sobreCardText" data-aos="fade-down">
+            <p class="sobreTxt">
+                Fundada em 26 de junho de 2000, a Brasil Luvas tem como missão fornecer os melhores equipamentos de segurança e ferramentas para construção civil em geral, com um atendimento personalizado e um alto padrão de qualidade. A empresa tem uma equipe de profissionais altamente capacitados e comprometidos com a satisfação dos clientes.
+            </p>
+        </div>
+
+        <div  class="sobreCardText" data-aos="fade-right">
+            <p class="sobreTxt">
+                Sediada em Goiás e atende também o Distrito Federal. Além disso, a empresa oferece entrega em todo o Brasil, com o frete por conta do cliente e a entrega feita através de transportadora, garantindo a segurança e a rapidez na entrega dos produtos.
+            </p>
+        </div>
+
+        <div  class="sobreCardText" data-aos="fade-left">
+            <p class="sobreTxt">
+                A ampla variedade de produtos oferecidos pela Brasil Luvas inclui equipamentos de proteção individual (EPIs), como luvas, capacetes, botas, óculos de proteção, entre outros, além de ferramentas para construção civil, como serras, martelos, furadeiras, entre outras. Todos os produtos são de marcas reconhecidas no mercado, garantindo a qualidade e a segurança para os usuários.
+            </p>
+        </div>
+
+        <div  class="sobreCardText" data-aos="fade-up-right">
+            <p class="sobreTxt">
+                Com a Brasil Luvas, os clientes podem contar com um atendimento personalizado e eficiente, além de produtos de alta qualidade e preços competitivos. A empresa está sempre em busca de novas soluções e tecnologias para oferecer aos clientes o que há de melhor no mercado de equipamentos de segurança e ferramentas para construção civil.
+            </p>
+        </div>
+        
+
+        
+
+        
+
+        
+
+        
+        </main>
+        <footer class="footer">
+            <p>Endereço: Rua Exemplo, 123 - Cidade Exemplo, Estado Exemplo</p>
+            <div>
+                <a href="https://www.facebook.com/suaempresa" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/suaempresa" target="_blank">Instagram</a>
+                <a href="https://www.twitter.com/suaempresa" target="_blank">Twitter</a>
+            </div>
+            <div class="formularioCard">
+            
+                <button id="open-popup-btn">Enviar mensagem</button>
+        
+                <div class="popup-overlay" id="popup-overlay">
+                    <div class="popup-container">
+                        <span class="popup-close" id="popup-close">&times;</span>
+                        <form action="https://formsubmit.co/moura.matheus26@gmail.com" method="POST">
+                            <div class="form-group">
+                                <label for="name">Nome:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/obrigado.html">
+                                <label for="email">E-mail:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem:</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" value="Enviar">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+            
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init( {duration: 1500} );</script>
+</body>
+
+<script src="sobre.js"></script>
+<script src="contatos.js"></script>
+</html>

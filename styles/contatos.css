@@ -1,0 +1,28 @@
+.entreEmContato{
+    margin-top: 88px;
+    margin-bottom: 88px;
+    height: 55vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.entreEmContato h1 {
+    width: 100%;
+}
+
+.entreEmContato div {   
+}
+
+.entreEmContato div p{
+
+}
+
+#buttonArea {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}

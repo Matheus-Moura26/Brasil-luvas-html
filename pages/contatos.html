@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasil luvas</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/contatos.css">
+    <link rel="stylesheet" href="../styles/formulario.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+</head>
+<body>
+    <nav class="navBar">
+        <a href="./index.html" class="logo">Brasil Luvas</a>
+        <div class="navLinks">
+            <ul>
+                <li class="btnNavbar1"><a href="./produtos.html">Produtos</a></li>
+                <li class="btnNavbar2"><a href="./sobre.html">Quem somos</a></li>
+                <li class="btnNavbar3"><a href="./contatos.html">Contatos</a></li>
+            </ul>
+            
+        </div>
+        <img src="../images/menu-icon.png" alt="Botão Menu" class="menuBotao">
+
+    </nav>
+    
+    <div class="entreEmContato">
+      <h1> Entre em contato conosco</h1>
+      <div>
+        <p>Email</p>
+        <p>brasilluvas@hotmail.com</p>
+      </div>
+      <div>
+        <p>Telefone</p>
+        <p>(62)3537-9837</p>
+      </div>
+      <div>
+        <p>Celular</p>
+        <p>(62)98535-3298 - (62)99138-3298 - (62)3596-1485</p>  
+      </div>
+      <div id="buttonArea">
+        <p>Ou clique no botão abaixo e nos envie uma mensagem</p>
+        <button id="open-popup-btn">Enviar mensagem</button>
+      </div>
+      
+    </div>
+    
+
+
+    
+
+    <div class="popup-overlay" id="popup-overlay">
+      <div class="popup-container">
+        <span class="popup-close" id="popup-close">&times;</span>
+        <form action="https://formsubmit.co/moura.matheus26@gmail.com" method="POST">
+          <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/obrigado.html">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" value="Enviar">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="rodapeCard">
+      <div class="rodapeBox1">
+          <div class="rodapeBox1Div">
+              <p class="rodapeTitle" id="rodapeTitle">Brasil Luvas</p>
+              <p class="rodapeTxt4">Rua xx Ltxx Qdxx, Bairro: xx</p>
+              <p class="rodapeTxt4">Aparecida de Goiania - GO</p>
+              <p class="rodapeTxt4">CEP:xxxxx-xxx</p>
+              <p class="rodapeTxt4">CNPJ: xx.xxx.xxx/xxxx-xx</p>
+              <div class="rodapeSocialsDiv">
+              <p class="rodapeSocials">Facebook</p>
+              <p class="rodapeSocials">Instagram</p>
+              <p class="rodapeSocials">Linkedin</p>
+              <p class="rodapeSocials">Youtube</p> 
+              </div>
+
+          </div>
+
+          <div class="rodapeBox1Div">
+              <div class="rodapeBox1DivApp">
+                  <p class="rodapeTxt2">
+                  Baixe o App</p>
+              </div>
+
+              <div class="rodapeBox1DivApp">
+                  <p class="rodapeTxt5">Google Play</p>
+              </div>
+
+              <div class="rodapeBox1DivApp">
+                  <p class="rodapeTxt5">App Store</p>
+              </div>
+              
+              
+              
+          </div>
+
+          <div class="rodapeBox1Div">
+              <p class="rodapeTxt4">Contatos no link abaixo</p>
+              <p class="rodapeTxt1">FALE CONOSCO --</p>
+              <p class="rodapeTxt4">Horário de atendimento: Segunda a sexta-feira das 9h ás 18h, exeto em feriados nacionais.</p>
+          </div>
+
+          <div class="rodapeBox1Div">
+              <div class="itensProcurados">
+                  <p class="rodapeTxt3">Assembleias</p>
+              </div>
+              
+              <div class="itensProcurados">
+                  <p class="rodapeTxt3">Pagamentos</p>
+              </div>
+
+              <div class="itensProcurados">
+                  <p class="rodapeTxt3">Grupos encerrados</p>
+              </div>
+
+              <div class="itensProcurados">
+                  <p class="rodapeTxt3">Valores a receber</p>
+              </div>
+
+              <div class="itensProcurados">
+                  <p class="rodapeTxt3">Dúvidas frequentes</p>
+              </div>
+
+              <div class="itensProcurados">
+                  <p class="rodapeTxt3">regulamentos</p>
+              </div>
+          </div>
+      </div>
+
+      <div div class="rodapeBox2">
+          <div class="rodapeBox2Div">
+              <a class="rodapeSubBottons">Portal de Privacidade</a>
+              <a class="rodapeSubBottons">Política de Privacidade</a>
+              <a class="rodapeSubBottons">Política de Segurança Cibernética</a>
+              <a class="rodapeSubBottons">Código de Ética</a>
+              <a class="rodapeSubBottons">Canal do Fornecedor</a>
+              <a class="rodapeSubBottons">Canal de Denúncias</a>
+              <a class="rodapeSubBottons">Segurança</a>
+              <a class="rodapeSubBottons">Procon Goiania</a>
+              <a class="rodapeSubBottons">Ouvidoria</a>
+              <a class="rodapeSubBottons">Negociar Dívidas</a>
+              <a class="rodapeSubBottons">Gerenciar Cookies</a>
+              <a class="rodapeSubBottons">Termos de uso sites e Apps</a>
+          </div>
+
+      </div>
+  </div>
+    <script src="contatos.js"></script>
+
+
+
+    
+</body>
+<script>
+    const menuBotao = document.querySelector('.menuBotao');
+    const navLinks = document.querySelector(".navLinks")
+
+    menuBotao.addEventListener( 'click',() => {navLinks.classList.toggle('mobileMenu')})
+
+</script>
+
+</html>

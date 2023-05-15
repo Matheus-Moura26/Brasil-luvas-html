@@ -1,0 +1,40 @@
+
+
+.sobreBox{
+    padding: 40px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobreCardText{
+    margin-right: 10px auto;
+    width: 50vw;
+    margin-top: 50px;
+    padding: 40px 20px;
+    box-shadow: -5px 5px 25px #868686;
+
+}
+
+.sobreTxt{
+    
+}
+
+@media(max-width:768px){
+
+    .sobreBox{
+        display: flex;
+        align-items: center;
+        padding: 10px 44px;
+    }
+    .sobreCardTextLeft{
+        width: 80vw;
+        padding: 15px 15px;
+    }
+
+    .sobreCardTextRight{
+        width: 80vw;
+        padding: 15px 15px; 
+    }
+}

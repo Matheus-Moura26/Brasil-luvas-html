@@ -1,0 +1,57 @@
+
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      max-width: 150px;
+      height: auto;
+    }
+
+    .message {
+      text-align: center;
+    }
+
+    .message p {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .container .message button {
+        background-color: black;
+        width: 10vw;
+        height: 5vh;
+        border-radius: 15px;
+        transition: .5s;
+    }
+    .container .message button a {
+        text-decoration: none;
+        color: white;
+        transition: .4s;
+    }
+
+    .container .message button:hover {
+        background-color: white;
+    }
+    .container .message button:hover a {
+        color: black;
+        font-weight: 600;
+    }
+
+
+
+
+
+
+
+        
