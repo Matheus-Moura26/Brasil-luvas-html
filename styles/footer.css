@@ -6,6 +6,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #00235E;
+    width: 100vh;
 }
 
 .rodapeBox1 {
