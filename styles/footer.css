@@ -1,64 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 .rodapeCard {
-    background-color: aliceblue;
+    width: 100vw;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     background-color: #00235E;
 }
 
-.rodapeBox1 {
-width: 100%;
-height: 15rem;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-align-items: center;
-justify-content: space-around;
+.rodapeLogo {
+    width: 100vw;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
 }
 
-.rodapeBox2 {
-    width: 100%;
-    height: 11rem;
+.rodapeBox1 {
+    width: 100vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    }
+}
 
 .rodapeBox1Div {
+    width: 25vw;
+    height: 25vh;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
-    height: 14rem;
-    width: 20rem;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    border: 1px solid black;
 }
-#rodapeTitle {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-.rodapeTitle {
-    font-family: 'Raleway', sans-serif;
+
+.rodapeCard .rodapeBox1 h3 {
     color: white;
-    font-size: 2.02rem;
-}
-
-.rodapeSocialsDiv {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.rodapeBox1DivApp {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .rodapeSocials{
@@ -67,46 +49,9 @@ justify-content: space-around;
     color: white;
 }
 
-.itensProcurados {
-    margin-left: 10rem;
-    justify-content: center;
-    align-items: center;
-    width: 99%;
-}
-
-.rodapeBox2Div {
-    display: flex;
-    flex-wrap: wrap;
-    height: 3rem;
-    width: 65rem;
-    align-items: center;
-    justify-content: center;
-}
-
-.rodapeSubBottons {
-    margin-left: 1.3rem ;
-    color: white;
-    align-self: flex-end;
-}
-
-.rodapeTxt5{
-    font-size: 0.9rem;
-    color: white;
-}
 
 .rodapeTxt4{
     font-size: 1rem;
-    color: white;
-}
-
-.rodapeTxt3{
-    font-size: 1.1rem;
-    color: white;
-}
-
-.rodapeTxt2{
-    font-size: 1rem;
-    font-weight: bold;
     color: white;
 }
 
@@ -114,4 +59,29 @@ justify-content: space-around;
     font-size: 1.15rem;
     align-items: center;
     color: white;
+}
+
+@media screen and (max-width: 900px){
+
+    .rodapeCard .rodapeBox1 h3 {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .rodapeSocials{
+        font-size: 0.8rem;
+        padding-left: 0.6rem;
+        text-align: center;
+    }
+    
+    
+    .rodapeTxt4{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    
+    .rodapeTxt1{
+        font-size: 0.8rem;
+        text-align: center;
+    }
 }
