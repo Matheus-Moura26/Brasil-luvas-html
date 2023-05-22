@@ -5,7 +5,7 @@ const navLinks = document.querySelector(".navLinks")
 menuBotao.addEventListener( 'click',() => {navLinks.classList.toggle('mobileMenu')})
 
 //Seletor de itens
-/* function filterProducts(nicho) {
+function filterProducts(nicho) {
     var cards = document.getElementsByClassName('card');
 
     for (var i = 0; i < cards.length; i++) {
@@ -18,7 +18,7 @@ menuBotao.addEventListener( 'click',() => {navLinks.classList.toggle('mobileMenu
         card.style.display = 'none';
       }
     }
-  } */
+  }
 
 
 //Mostrar detalhes dos produtos
