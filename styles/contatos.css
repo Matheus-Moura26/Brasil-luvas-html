@@ -4,18 +4,17 @@
     height: 55vh;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-around;
+}
+.entreEmContato p {
+
 }
 
 .entreEmContato h1 {
     width: 100%;
 }
-
-.entreEmContato div {   
-}
-
 .entreEmContato div p{
-
 }
 
 #buttonArea {
@@ -25,4 +24,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+#buttonArea button {
+    margin-top: 16px;
 }
