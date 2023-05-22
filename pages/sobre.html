@@ -66,44 +66,37 @@
 
         
         </main>
-        <footer class="footer">
-            <p>Endereço: Rua Exemplo, 123 - Cidade Exemplo, Estado Exemplo</p>
-            <div>
-                <a href="https://www.facebook.com/suaempresa" target="_blank">Facebook</a>
-                <a href="https://www.instagram.com/suaempresa" target="_blank">Instagram</a>
-                <a href="https://www.twitter.com/suaempresa" target="_blank">Twitter</a>
-            </div>
-            <div class="formularioCard">
-            
-                <button id="open-popup-btn">Enviar mensagem</button>
-        
-                <div class="popup-overlay" id="popup-overlay">
-                    <div class="popup-container">
-                        <span class="popup-close" id="popup-close">&times;</span>
-                        <form action="https://formsubmit.co/moura.matheus26@gmail.com" method="POST">
-                            <div class="form-group">
-                                <label for="name">Nome:</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/obrigado.html">
-                                <label for="email">E-mail:</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Mensagem:</label>
-                                <textarea id="message" name="message" required></textarea>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" value="Enviar">Enviar</button>
-                            </div>
-                        </form>
-                    </div>
+        <div class="rodapeCard">
+            <p class="rodapeLogo">Brasil Luvas</p>
+    
+            <div class="rodapeBox1">
+    
+                <div class="rodapeBox1Div">
+                    <h3 class="rodapeSubTitles">ENDEREÇO</h3>
+                    <p class="rodapeTxt4">Rua xx Ltxx Qdxx, Bairro: xx</p>
+                    <p class="rodapeTxt4">Aparecida de Goiania - GO</p>
+                    <p class="rodapeTxt4">CEP:xxxxx-xxx</p>
+                    <p class="rodapeTxt4">CNPJ: xx.xxx.xxx/xxxx-xx</p>    
                 </div>
+    
+                <div class="rodapeBox1Div">
+                    <h3 class="rodapeSubTitles">NOS ACOMPANHE</h3>
+                    <p class="rodapeSocials">Facebook</p>
+                    <p class="rodapeSocials">Instagram</p>
+                    <p class="rodapeSocials">Linkedin</p>
+                    <p class="rodapeSocials">Youtube</p> 
+                </div>
+    
+                <div class="rodapeBox2Div">
+                    <h3 class="rodapeSubTitles">ENTRE EM CONTATO CONOSCO</h3>
+                    <p class="rodapeTxt1">FALE CONOSCO --</p>
+                    <p class="rodapeTxt4">Horário de atendimento: Segunda a sexta-feira das 9h <br> ás 18h exeto em feriados nacionais.</p>
+                    <p class="rodapeTxt4">Ou <a href="./pages/contatos.html">clique aqui</a> e nos mande uma mensagem</p>
+                </div>
+    
                 
-            
             </div>
-        </footer>
+        </div>
 
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>AOS.init( {duration: 1500} );</script>
