@@ -70,6 +70,16 @@
     color: white;
 }
 
+.rodapeTxt4 a {
+    color: #008cff;
+    transition: .3s;
+}
+
+.rodapeTxt4 a:hover {
+    color: #0022ff;
+    transform: scale(1.1);
+}
+
 .rodapeTxt1{
     font-size: 1.15rem;
     align-items: center;
