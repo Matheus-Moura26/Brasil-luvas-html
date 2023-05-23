@@ -2,23 +2,43 @@
 const menuBotao = document.querySelector('.menuBotao');
 const navLinks = document.querySelector(".navLinks")
 
-menuBotao.addEventListener( 'click',() => {navLinks.classList.toggle('mobileMenu')})
+menuBotao.addEventListener( 'click',() => {navLinks.classList.toggle('mobileMenu')});
 
 //Seletor de itens
+
 function filterProducts(nicho) {
-    var cards = document.getElementsByClassName('card');
 
-    for (var i = 0; i < cards.length; i++) {
-      var card = cards[i];
-      var nichoProduto = card.getAttribute('data-nicho');
+  const filtros =  [
+    { nome: "abafador", style: { display: "block" } }, 
+    { nome: "avental", style: { display: "block" } }, 
+    { nome: "calçados", style: { display: "block" } },
+    { nome: "capacete", style: { display: "block" } }, 
+    { nome: "equipamentos", style: { display: "block" } }, 
+    { nome: "ferramentas", style: { display: "block" } },  
+    { nome: "filtros", style: { display: "block" } },  
+    { nome: "luvas", style: { display: "block" } }, 
+    { nome: "mascaras", style: { display: "block" } }, 
+    { nome: "oculos", style: { display: "block" } }
+   ];
 
-      if (nicho === 'all' || nichoProduto === nicho) {
-        card.style.display = 'block';
-      } else {
-        card.style.display = 'none';
+
+  
+    if (nicho === 'all') {
+      for( const element of filtros){
+        document.querySelector("." + element.nome).style.display = "block"
+      }
+    }else {
+      for (const element of filtros) {
+        if(element.nome === nicho){ 
+          document.querySelector("." + element.nome).style.display = "block"
+        }else{
+          document.querySelector("." + element.nome).style.display = "none"
+        }
       }
     }
-  }
+  
+
+}
 
 
 //Mostrar detalhes dos produtos
