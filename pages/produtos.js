@@ -25,12 +25,12 @@ function filterProducts(nicho) {
   
     if (nicho === 'all') {
       for( const element of filtros){
-        document.querySelector("." + element.nome).style.display = "block"
+        document.querySelector("." + element.nome).style.display = "flex"
       }
     }else {
       for (const element of filtros) {
         if(element.nome === nicho){ 
-          document.querySelector("." + element.nome).style.display = "block"
+          document.querySelector("." + element.nome).style.display = "flex"
         }else{
           document.querySelector("." + element.nome).style.display = "none"
         }
