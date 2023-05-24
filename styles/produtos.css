@@ -1,5 +1,7 @@
  main {
   min-height: 70vh;
+  margin: 0;
+  padding: 0;
  }
 
  .filtersArea{
@@ -26,15 +28,20 @@
   }
 
   .container {
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     max-width: 80vw;
-    padding-left: 10vw;
   }
 
   .card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     width: 300px;
     margin: 20px;
     background-color: #fff;
@@ -68,8 +75,9 @@
   .card h3 {
     margin: 0;
     font-size: 18px;
-    color: #333;
+    color: #00013b;
     margin-bottom: 10px;
+    height: 5vh;
   }
 
   .details-overlay {
@@ -155,13 +163,46 @@
     justify-content: center;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
+    .filtersArea {
+      background: #33333336;
+      width: 100%;
+      height: 6.5vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .filter{
       display: none;
     }
-
+    .filtersCard{
+      width: 70vw;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 40px;
+      margin-right: 40px;
+      
+      background-color: aqua;
+    }
+    .searchBar{
+      border-radius: 10px;
+      width: 15rem;
+      height: 75%;
+      
+    }
     .mobileFilterMenuButton{
       display: block;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .mobileFilterMenuButton button{
+      width: 75px;
+      height: 75%;
+      border-radius: 10px;
     }
 
 

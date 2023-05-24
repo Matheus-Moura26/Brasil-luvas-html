@@ -25,25 +25,33 @@
     <img src="../images/menu-icon.png" alt="Botão Menu" class="menuBotao">
 
 </nav>
+
+<div class="filtersArea">
+  
+  <div class="filter">
+    <button onclick="filterProducts('all')">Todos</button>
+    <button onclick="filterProducts('abafador')">Abafador</button>
+    <button onclick="filterProducts('avental')">Avental</button>
+    <button onclick="filterProducts('calçados')">Calçados</button>
+    <button onclick="filterProducts('capacete')">Capacete</button>
+    <button onclick="filterProducts('equipamentos')">Equipamentos</button>
+    <button onclick="filterProducts('ferramentas')">Ferramentas</button>
+    <button onclick="filterProducts('filtros')">Filtros</button>
+    <button onclick="filterProducts('luvas')">Luvas</button>
+    <button onclick="filterProducts('mascaras')">Máscaras</button>
+    <button onclick="filterProducts('oculos')">Oculos/Protetor facial</button>
+  </div>
+  <div class="filtersCard">
+    <input class="searchBar" type="text" placeholder="Pesquise">
+    <div class="mobileFilterMenuButton">
+      <button>Filtrar</button>
+    </div>
+  </div>
+  
+</div>
     <main>
         <!--FILTRO DE ITENS -->
-        <div class="filtersArea">
-          <div class="filter">
-            <button onclick="filterProducts('all')">Todos</button>
-            <button onclick="filterProducts('abafador')">Abafador</button>
-            <button onclick="filterProducts('avental')">Avental</button>
-            <button onclick="filterProducts('calçados')">Calçados</button>
-            <button onclick="filterProducts('capacete')">Capacete</button>
-            <button onclick="filterProducts('equipamentos')">Equipamentos</button>
-            <button onclick="filterProducts('ferramentas')">Ferramentas</button>
-            <button onclick="filterProducts('filtros')">Filtros</button>
-            <button onclick="filterProducts('luvas')">Luvas</button>
-            <button onclick="filterProducts('mascaras')">Máscaras</button>
-            <button onclick="filterProducts('oculos')">Oculos/Protetor facial</button>
-        </div>
-
-        <div class="mobileFilterMenuButton"><button>Filtrar</button></div>
-        </div>
+        
         
 
         <div class="container">
