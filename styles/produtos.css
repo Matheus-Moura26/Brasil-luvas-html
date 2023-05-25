@@ -338,6 +338,9 @@
       --small-font-size: .875rem;
     }
 
+    .searchContainer{
+      width: 85%;
+    }
     .search__input{
       width: 80%;
     }
