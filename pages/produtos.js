@@ -1,19 +1,35 @@
-//NavBar
+/* ///////////////////////////  NAVBAR   ////////////////////////////  */
 const menuBotao = document.querySelector('.menuBotao');
 const navLinks = document.querySelector(".navLinks")
 
 menuBotao.addEventListener( 'click',() => {navLinks.classList.toggle('mobileMenu')});
 
+
 /* /////////////////////    SEARCH BAR JS   ////////////////////// */
+/* ========  VISUAL  ======= */
 function toogleSearch() {
     document.querySelector('#search-bar').classList.toggle('show-search')
 }
 
+/* ======= SEARCHING ======= */
+document.getElementById('search-input').addEventListener('input', function() {
+  var input = this.value.toLowerCase();
+  var products = document.getElementsByClassName('card');
+
+  for (var i = 0; i < products.length; i++) {
+    var productName = products[i].querySelector('.card-content h3').innerText.toLowerCase();
+
+    if (productName.indexOf(input) > -1) {
+      products[i].style.display = '';
+    } else {
+      products[i].style.display = 'none';
+    }
+  }
+});
+
 
 /*//////////////////////    PRODUCS FILTER /////////////////////// */
-
 function filterProducts(nicho) {
-
   const filtros =  [
     { nome: "abafador", style: { display: "block" } }, 
     { nome: "avental", style: { display: "block" } }, 
@@ -27,23 +43,19 @@ function filterProducts(nicho) {
     { nome: "oculos", style: { display: "block" } }
    ];
 
-
-  
-    if (nicho === 'all') {
-      for( const element of filtros){
+  if (nicho === 'all') {
+    for( const element of filtros){
+      document.querySelector("." + element.nome).style.display = "flex"
+    }
+  }else {
+    for (const element of filtros) {
+      if(element.nome === nicho){ 
         document.querySelector("." + element.nome).style.display = "flex"
-      }
-    }else {
-      for (const element of filtros) {
-        if(element.nome === nicho){ 
-          document.querySelector("." + element.nome).style.display = "flex"
-        }else{
-          document.querySelector("." + element.nome).style.display = "none"
-        }
+      }else{
+        document.querySelector("." + element.nome).style.display = "none"
       }
     }
-  
-
+  }
 }
 
 
