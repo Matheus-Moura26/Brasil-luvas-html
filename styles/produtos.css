@@ -7,12 +7,26 @@
 
  /* FILTER AND SEARCH */
  .filtersArea{
+  background-color: #3333333f;
+  display: flex;
+  align-items: center ;
+  justify-content: center;
   width: 100%;
-  height: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
  }
+ .filtersCard{
+  width: 70vw;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-inline: 1.5rem;
+}
  .filter {
     text-align: center;
     margin-bottom: 20px;
+    display: none;
   }
 
   .filter button {
@@ -26,7 +40,18 @@
   }
 
   .mobileFilterMenuButton {
-    display: none;
+    width: 18%;
+    display: block;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobileFilterMenuButton button{
+    width: 20vw;
+    height: 100%;
+    border-radius: 10px;
   }
 
   /* SEARCH BAR */
@@ -60,8 +85,9 @@
   /* ==================== SEARCH =================== */
   .searchContainer{
     display: grid;
-    place-items: center;
+    place-items: end;
     margin-inline: 1.5rem;
+    width: 70%;
   }
 
   .search{
@@ -71,8 +97,8 @@
     background-color: var(--white-color);
     box-shadow: 0 4px 24px hsla(222, 68%, 12%, .1);
     border-radius: 4rem;
-    padding: 10px; /* 
-    overflow: hidden; */
+    padding: 10px; 
+    overflow: hidden;
     transition: width .5s cubic-bezier(.9, 0, .3, .9);
   }
 
@@ -103,7 +129,7 @@
     position: absolute;
     bottom: 0;
     top: 0;
-    right: 10px;
+    right: 0px;
     margin: auto;
     display: grid;
     place-items: center;
@@ -124,7 +150,7 @@
   }
   /*  Search animated */
   .show-search{
-    width: 400px;
+    width: 100%;
   }
   .show-search .search__input{
     opacity: 1;
@@ -284,38 +310,7 @@
   @media (max-width: 800px) {
 
     /*//////////////////     FILTER AND SEARCH    /////////////////*/
-    .filtersArea {
-      background: #33333336;
-      width: 100%;
-      height: 6.5vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .filter{
-      display: none;
-    }
-    .filtersCard{
-      width: 70vw;
-      height: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-left: 40px;
-      margin-right: 40px;
-    }
-    .mobileFilterMenuButton{
-      display: block;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .mobileFilterMenuButton button{
-      width: 75px;
-      height: 75%;
-      border-radius: 10px;
-    }
+    
 
     /*=========== SEARCH ============ */
     /* Responsive typhography */
@@ -324,7 +319,7 @@
     }
 
     .show-search{
-      width: 45vw;
+      width: 100%;
     }
 
     /*///////////////     PRODUCTS    //////////////////////////// */
