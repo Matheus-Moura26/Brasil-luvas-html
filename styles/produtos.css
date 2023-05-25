@@ -19,9 +19,10 @@
   width: 70vw;
   height: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   margin-inline: 1.5rem;
+  padding-right: 8.5vw;
 }
  .filter {
     display: none;
@@ -30,12 +31,8 @@
   .filterActive{
     position: absolute;
     display: block;
-    transition: .8s;
     z-index: 1;
     width: 100%;
-    left: 0;
-    right: 0;
-    margin: auto;
   }
 
 
