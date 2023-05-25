@@ -88,6 +88,7 @@
     place-items: end;
     margin-inline: 1.5rem;
     width: 70%;
+    max-width: 500px;
   }
 
   .search{
@@ -105,7 +106,7 @@
   .search__input{
     border: none;
     outline: none;
-    width: calc(100% - 12%);
+    width: 92%;
     height: 100%;
     border-radius: 4rem;
     padding-left: 14px;
@@ -150,7 +151,7 @@
   }
   /*  Search animated */
   .show-search{
-    width: 100%;
+    width: 80%;
   }
   .show-search .search__input{
     opacity: 1;
@@ -318,6 +319,9 @@
       --small-font-size: .875rem;
     }
 
+    .search__input{
+      width: 80%;
+    }
     .show-search{
       width: 100%;
     }
