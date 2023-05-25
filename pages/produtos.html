@@ -38,19 +38,7 @@
 
 <div class="filtersArea">
   <!--FILTRO DE ITENS -->
-  <div class="filter">
-    <button onclick="filterProducts('all')">Todos</button>
-    <button onclick="filterProducts('abafador')">Abafador</button>
-    <button onclick="filterProducts('avental')">Avental</button>
-    <button onclick="filterProducts('calçados')">Calçados</button>
-    <button onclick="filterProducts('capacete')">Capacete</button>
-    <button onclick="filterProducts('equipamentos')">Equipamentos</button>
-    <button onclick="filterProducts('ferramentas')">Ferramentas</button>
-    <button onclick="filterProducts('filtros')">Filtros</button>
-    <button onclick="filterProducts('luvas')">Luvas</button>
-    <button onclick="filterProducts('mascaras')">Máscaras</button>
-    <button onclick="filterProducts('oculos')">Oculos/Protetor facial</button>
-  </div>
+  
   <div class="filtersCard">
     <div class="searchContainer">
       <form  class="search" id="search-bar" >
@@ -63,7 +51,22 @@
       </form>
     </div>
     <div class="mobileFilterMenuButton">
-      <button>Filtrar</button>
+      <button onclick="appear()">Filtrar</button>
+      <div class="filter">
+        <div class="filterButtons">
+          <button onclick="filterProducts('all')" class="complicatedBtn">Todos</button>
+          <button onclick="filterProducts('abafador')" class="complicatedBtn">Abafador</button>
+          <button onclick="filterProducts('avental')" class="complicatedBtn">Avental</button>
+          <button onclick="filterProducts('calçados')" class="complicatedBtn">Calçados</button>
+          <button onclick="filterProducts('capacete')" class="complicatedBtn">Capacete</button>
+          <button onclick="filterProducts('equipamentos')" class="complicatedBtn">Equipamentos</button>
+          <button onclick="filterProducts('ferramentas')" class="complicatedBtn">Ferramentas</button>
+          <button onclick="filterProducts('filtros')" class="complicatedBtn">Filtros</button>
+          <button onclick="filterProducts('luvas')" class="complicatedBtn">Luvas</button>
+          <button onclick="filterProducts('mascaras')" class="complicatedBtn">Máscaras</button>
+          <button onclick="filterProducts('oculos')" class="complicatedBtn">Óculos/Protetor facial</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>

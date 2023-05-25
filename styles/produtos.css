@@ -24,35 +24,55 @@
   margin-inline: 1.5rem;
 }
  .filter {
-    text-align: center;
-    margin-bottom: 20px;
     display: none;
   }
 
-  .filter button {
-    background-color: #333;
-    color: #fff;
+  .filterActive{
+    position: absolute;
+    display: block;
+    transition: .8s;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+
+  .filterButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--white-color);
+    
+  }
+
+  .complicatedBtn {
+    width: 100%;
     border: none;
-    border-radius: 5px;
-    padding: 8px 20px;
-    font-size: 16px;
-    cursor: pointer;
+    padding: 5px;
+  }
+  .complicatedBtn:hover {
+    background-color: rgb(0, 255, 255);
   }
 
   .mobileFilterMenuButton {
     width: 18%;
-    display: block;
     height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .mobileFilterMenuButton button{
     width: 20vw;
     height: 100%;
     border-radius: 10px;
+    
   }
+
+/*   .mobileFilterMenuButton button:focus + .filter {
+    display: block; 
+    margin-top: 10px;
+    position: absolute;
+  } */
 
   /* SEARCH BAR */
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');

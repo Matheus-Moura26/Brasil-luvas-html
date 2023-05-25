@@ -29,6 +29,12 @@ document.getElementById('search-input').addEventListener('input', function() {
 
 
 /*//////////////////////    PRODUCS FILTER /////////////////////// */
+/* ====== making the filters apear (css) ==== */
+function appear(){
+  document.querySelector(".filter").classList.toggle('filterActive');
+}
+
+/* ======  the filtering ===== */
 function filterProducts(nicho) {
   const filtros =  [
     { nome: "abafador", style: { display: "block" } }, 
