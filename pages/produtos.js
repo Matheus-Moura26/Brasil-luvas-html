@@ -4,7 +4,13 @@ const navLinks = document.querySelector(".navLinks")
 
 menuBotao.addEventListener( 'click',() => {navLinks.classList.toggle('mobileMenu')});
 
-//Seletor de itens
+/* /////////////////////    SEARCH BAR JS   ////////////////////// */
+function toogleSearch() {
+    document.querySelector('#search-bar').classList.toggle('show-search')
+}
+
+
+/*//////////////////////    PRODUCS FILTER /////////////////////// */
 
 function filterProducts(nicho) {
 
