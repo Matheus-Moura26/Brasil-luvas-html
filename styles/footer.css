@@ -78,12 +78,36 @@
 .rodapeTxt4 a:hover {
     color: #0022ff;
     transform: scale(1.1);
+    align-items: center;
+    justify-items: center;
+    text-align: center;
 }
 
 .rodapeTxt1{
     font-size: 1.15rem;
     align-items: center;
     color: white;
+}
+
+#whatsBtnCard{
+
+ }
+#btnWhatsappFooter{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#falseBtn{
+    font-size: 1rem;
+    color: white;
+    cursor: context-menu;
+}
+#falseBtn:hover{
+    font-size: 1rem;
+    color: white;
+    cursor: context-menu;
 }
 
 @media screen and (max-width: 900px){
