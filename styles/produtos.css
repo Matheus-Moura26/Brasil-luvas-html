@@ -197,20 +197,22 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    max-width: 80vw;
+    max-width: 98.5vw;
   }
 
   .card {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    margin: 20px;
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    height: 400px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.21);
     overflow: hidden;
     transition: transform 0.3s ease;
   }
@@ -220,9 +222,10 @@
   }
 
   .card img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    max-height: 60%;
     object-fit: cover;
+    object-position: left;
     filter: brightness(70%);
     transition: filter 0.3s ease;
     cursor: pointer;
@@ -304,9 +307,6 @@
   }
 
   .container div img {
-    height: 20em;
-    object-fit: fill;
-    border-radius: 8px;
   }
 
   .abafador,
@@ -325,6 +325,7 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    margin: 0;
   }
 
   @media (max-width: 800px) {
@@ -350,21 +351,17 @@
 
     /*///////////////     PRODUCTS    //////////////////////////// */
     .container {
-      padding: 10px;
+      max-width: 90vw;
     }
 
-    .card {
-      width: 10em;
-      max-width: 40em;
-      margin: 10px;
+    .card{
+      margin-bottom: 10px;
     }
     .card-content{
-      padding: 10px;
+      min-height: 15vh;
     }
-
-    .container div img {
-      height: 10em;
-      
+    .card img {
+      object-fit: contain;
     }
 
     .details {
