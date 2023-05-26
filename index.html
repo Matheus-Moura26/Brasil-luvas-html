@@ -83,14 +83,14 @@
             </div>
         </div>
     </div>
+    <script>
+        const menuBotao = document.querySelector('.menuBotao');
+        const navLinks = document.querySelector(".navLinks")
     
+        menuBotao.addEventListener( 'click',() => {navLinks.classList.toggle('mobileMenu')})
+    </script>
+    <script src="./pages/contatos.html"></script>
 </body>
-<script>
-    const menuBotao = document.querySelector('.menuBotao');
-    const navLinks = document.querySelector(".navLinks")
 
-    menuBotao.addEventListener( 'click',() => {navLinks.classList.toggle('mobileMenu')})
-</script>
-<script src="./pages/contatos.html"></script>
 
 </html>
