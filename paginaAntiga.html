@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasil luvas</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/formulario.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/aside.css">
+</head>
+<body>
+    <nav class="navBar">
+        <a href="./index.html" class="logo">Brasil Luvas</a>
+        <div class="navLinks">
+            <ul>
+                <li class="btnNavbar1"><a href="./pages/produtos.html">Produtos</a></li>
+                <li class="btnNavbar2"><a href="./pages/sobre.html">Quem somos</a></li>
+                <li class="btnNavbar3"><a href="./pages/contatos.html">Contatos</a></li>
+            </ul>
+            
+        </div>
+        <img src="./images/menu-icon.png" alt="Botão Menu" class="menuBotao">
+
+    </nav>
+    <main class="indexContainer">
+        <div class="indexMainContent">
+            <div class="indexCard">
+                <div class="indexContentLeft"><h1>Com parceria você vai mais longe</h1></div>
+                <div class="indexContentRight"><p>A Brasil Luvas oferece um ecosistema de produtos e benefícios para você potencializar o seu negócio</p></div>
+                
+            </div>
+            
+            <div class="indexCard">
+                <div  class="indexContentLeft"><h1>Sou seu parceiro no proximo passo</h1></div>
+                <div class="indexContentRight"><p>A mais de 20 anos, adiquirimos conhecimentos que nos tornaram parceiros confiáveis. Uma longa história construída para entender as necessidades de pessoas e empresas que buscam soluções e apoiar a construção de projetos de vida</p></div>
+                
+            </div>
+            
+            <div class="indexCard">
+                <div class="indexContentLeft"><h1>Aliando tradição e inovação</h1></div>
+                
+                <div class="indexContentRight">
+                    <ul>
+                        <li>
+                            Acreditamos que história são feitas de pequenas e grandes conquistas, e estar sempre presente em cada uma delas é o passo principal para chegar onde desejamos.
+                        </li>
+                        <li>
+                            Queremos transformar em realidade o seu objetivo de empreender e evoluir, sempre respeitando a trajetória de cada cliente e parceiro. Isso à leva a nossa própria evolução, que só é possível porque aprendemos a compartilhar a caminhada e dividir os planos com você.
+                        </li>
+                        <li>
+                            Afinal, quando sonhamos e construímos juntos, podemos ir muito mais longe.
+                        </li>
+                    </ul>
+                    
+                </div>
+                
+            </div>
+    
+            <div class="indexCard">
+                <div class="indexContentLeft"><h1>Quer ter acesso a benefícios?</h1></div>
+                <div class="indexContentRight">
+                    <p>
+                        Se você deseja ser nosso parceiro e ter acesso a todos os benefícios <a href="./pages/produtos.html" class="cliqueAqui">clique aqui</a> e veja todos os produtos que temos disponpiveis para você, lembrando que atendemos ao varejo e atacado.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        
+        <aside>
+            <a href="https://wa.me/5562985353298" id="whatsBtnCard"><img src="./images/whatsapp-icon-footer.png" alt="Enviar mensagem no Whatsapp" id="btnWhatsappAside"></a>
+        </aside>
+            
+    </main>
+
+
+    <div class="rodapeCard">
+        <p class="rodapeLogo">Brasil Luvas</p>
+  
+        <div class="rodapeBox1">
+  
+            <div class="rodapeBox2Div">
+                <h3 class="rodapeSubTitles">ENTRE EM CONTATO CONOSCO</h3>
+                <p class="rodapeTxt1">FALE CONOSCO --</p>
+                <p class="rodapeTxt4">Horário de atendimento: Segunda a sexta-feira das 9h ás 18h exeto em feriados nacionais.</p>
+                <p class="rodapeTxt4">Nos mande uma mensagem pelo Whatsapp -> <a href="https://wa.me/5562985353298" id="whatsBtnCard"><img src="./images/whatsapp-icon-footer.png" alt="Enviar mensagem no Whatsapp" id="btnWhatsappFooter"></a> <a href="/" id="falseBtn">ou</a> <a href="./pages/contatos.html">clique aqui</a> e vá para nossa pagina de contato</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const menuBotao = document.querySelector('.menuBotao');
+        const navLinks = document.querySelector(".navLinks")
+    
+        menuBotao.addEventListener( 'click',() => {navLinks.classList.toggle('mobileMenu')})
+    </script>
+    <script src="./pages/contatos.html"></script>
+</body>
+
+
+</html>
